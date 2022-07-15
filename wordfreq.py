@@ -29,7 +29,7 @@ class Solution:
         his = 0
         for ix, x in enumerate(hi_string):
             if len(hi_string)-ix >= 2:
-                if x == 'h' and hi_string[ix+1] == 'i':
+                if (x == 'h' or x == 'H') and (hi_string[ix+1] == 'i' or hi_string[ix+1] == 'I'):
                     his+=1
         return his
 
