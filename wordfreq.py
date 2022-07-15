@@ -28,8 +28,9 @@ class Solution:
     def hi_finder(self,hi_string):
         his = 0
         for ix, x in enumerate(hi_string):
-            if x == 'h' and hi_string[ix+1] == 'i':
-                his+=1
+            if len(hi_string)-ix >= 2:
+                if x == 'h' and hi_string[ix+1] == 'i':
+                    his+=1
         return his
 
 def main():
